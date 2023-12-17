@@ -146,13 +146,13 @@ function dom() {
       scrub: 0.1,
       trigger: "#main",
       start: "9% top",
-      end:"11% top",
+      end:"13% top",
       markers:true,
       pin:true,
 		},	
 	});
 
-tl1.to('.videoOverlay', { opacity: 0.85 })
-tl1.to('.videoOverlayText', { bottom:"18%" }, '+.6')
+tl1.to('.videoOverlay', { opacity: 0.85 }, '+.4')
+tl1.to('.videoOverlayText', { bottom:"18%" }, '+.4')
 
 

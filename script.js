@@ -10,16 +10,7 @@ function dom() {
       canvas.width = window.innerWidth;
       canvas.height = window.innerWidth;
       render();
-    }
-
-    // function setCanvasSize() {
-    //     const img = images[imageSeq.frame];
-    //     const aspectRatio = img.width / img.height;
-    //     canvas.width = window.innerWidth/2 ;
-    //     canvas.height = window.innerWidth / (3 * aspectRatio);
-    //     render();
-    //   }
-      
+    } 
   
     window.addEventListener("resize", setCanvasSize);
   
@@ -97,7 +88,7 @@ function dom() {
   dom();
  
 
-    let video = document.querySelector(".videoSection video");
+  let video = document.querySelector(".videoSection video");
 
   ScrollTrigger.create({
     trigger: "#main",
@@ -112,15 +103,56 @@ function dom() {
  });
 
 
-  gsap.to(".videoSection", {
-    scrollTrigger: {
+  
+
+  // gsap.to(".videoOverlay", {
+  //   scrollTrigger: {
+  //     scrub: 0.1,
+  //     trigger: "#main",
+  //     start: "9% top",
+  //     end:"11% top",
+  //     markers:true,
+  //   },
+  //   opacity: 0.85,
+  // });
+
+  // gsap.to(".videoOverlayText", {
+  //   scrollTrigger: {
+  //     scrub: 0.1,
+  //     trigger: "#main",
+  //     start: "10% top",
+  //     end:"13% top",
+  //     markers:true,
+  //   },
+  //   bottom:"18%",
+  // });
+
+  // gsap.to(".videoSection", {
+  //   scrollTrigger: {
+  //     scrub: 0.1,
+  //     trigger: "#main",
+  //     start: "9% top",
+  //     end:"15% top",
+  //     markers:true,
+  //     pin:true,
+  //   },
+  // });
+
+
+
+
+  let tl1 = gsap.timeline({
+		scrollTrigger: {
       scrub: 0.1,
       trigger: "#main",
       start: "9% top",
-      end:"15% top",
+      end:"11% top",
       markers:true,
       pin:true,
-    },
-  });
+		},	
+	});
+
+tl1.to('.videoOverlay', { opacity: 0.85 })
+tl1.to('.videoOverlayText', { bottom:"18%" }, '+.6')
 
 

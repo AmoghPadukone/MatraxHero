@@ -86,6 +86,8 @@ canvas {
     height: 100vh;
     width: 100vw;
     background-color: rgb(0, 0, 0);
+    position: relative;
+    overflow: hidden;
     /* background-color: blue; */
 }
 
@@ -96,7 +98,32 @@ canvas {
 }
 
 
+.videoOverlay{
+    height: 100vh;
+    width: 100vw;
+    background: #000000;
+    position: absolute;
+    opacity: 0;
+    z-index: 5;
+    transition: all ease 0.5s;
+    top: 0%;
+}
 
+.videoOverlayText{
+    position: absolute;
+    /* top: 10%; */
+/* 18% */
+    bottom: -48%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 3em;
+    text-align: center;
+    z-index: 6;
+    width: 70%;
+    transition: all ease 0.5s;
+
+}
 
 
 

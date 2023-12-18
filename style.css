@@ -132,6 +132,110 @@ canvas {
 /* <!-- ----------------Page 1 - Video Section------------- --> */
 
 
+/* ------------Horizontal Scroll--------- */
+#horizontal{
+    background-color: rgb(255, 255, 255);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#horizontal h2{
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 800;
+    color: #000;
+    padding-top: 5vh;
+}
+
+.horizontal__content {
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    padding: 0 5rem;
+    height: 70vh;
+    width: 130%;
+
+}
+
+.horizontal__item {
+    height: 35vh;
+    width: 35vh;
+    position: relative;
+    background:rgb(255, 255, 255);
+}
+
+.horizontal__item:not(:last-child) {
+    margin-right: 20vh;
+}
+
+.tyre_img_hor img{
+    width: 80%;
+}
+
+.tyre_img_hor {
+    width: 35vh;
+    height: 35vh;
+    border: 1px solid black;
+    /* background: #000; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0.7rem;
+}
+
+.down{
+    margin-top: 25vh;
+}
+
+.up_up{
+    margin-top: -15vh;
+}
+
+.right_content_hor{
+    color: #CDA050;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.left_content_hor{
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #000;
+    font-size: 0.9rem;
+    width: 50%;
+}
+
+.content_hor{
+    display: flex;
+    justify-content: space-between;
+}
+
+.on_hover_tyre_hor{
+    font-size: 0.8rem;
+    color: white;
+    background-color: #000;
+    border-radius: 20px;
+    padding: 0.7rem 1.1rem;
+    /* width: 50%; */
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+    transition: all 0.7s ease;
+    opacity: 0;
+}
+
+.horizontal__item:hover .on_hover_tyre_hor{
+    opacity: 1;
+    cursor: pointer;
+}
+
+
+/* ------------Horizontal Scroll--------- */ 
+
+
 .pg2{
     height: 100vh;
     width: 100%;

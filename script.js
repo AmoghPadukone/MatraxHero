@@ -118,3 +118,19 @@ tl1.to('.videoOverlay', { opacity: 0.85 }, '+.4')
 tl1.to('.videoOverlayText', { bottom:"18%" }, '+.4')
 }
 videoSection()
+
+function horizontalScroll(){
+gsap.to(".horizontal__content",{
+  transform:"translateX(-20%)",
+  scrollTrigger:{
+      trigger:"#main",
+      start:"18.2% top",
+      end:"27% top",
+      // scroller:"body",
+      scrub:3,
+      pin:true,
+      markers:true,
+  }, defaults: { duration: 5 }
+})
+}
+horizontalScroll()

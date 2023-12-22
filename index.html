@@ -1,138 +1,194 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Matrax Hero</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
-    <link rel="stylesheet" href="style.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css"
+    />
+    <link rel="stylesheet" href="style.css" />
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-      </style>
-</head>
-<body>
-<div id="main">
-    <!-- -------------Hero Section-------------- -->
-       <div class="heroSection">
-            <div class="navBar">
-                <img src="./images/brandLogo.svg" class="brandLogo">
-                <img src="./images/hamburger.svg" class="hamburger">
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+    </style>
+  </head>
+  <body>
+    <div id="main">
+      <!-- -------------Hero Section-------------- -->
+      <div class="heroSection">
+        <div class="navBar">
+          <div class="brandLogo">
+            <img src="./images/brandLogo.svg" />
+          </div>
+
+          <div class="navigation">
+            <div class="ham-btn" onclick="showNav()">
+              <span></span>
+              <span></span>
+              <span></span>
             </div>
-            <div class="imgBackgroundHero">
-                <img src="./images/Background 1.jpg" alt="">
+
+            <div class="links">
+              <div
+                class="splide"
+                role="group"
+                aria-label="Splide Basic HTML Example"
+              >
+                <div class="splide__arrows">
+                  <button class="splide__arrow splide__arrow--prev">
+                    Prev
+                  </button>
+                  <button class="splide__arrow splide__arrow--next">
+                    Next
+                  </button>
+                </div>
+                <div class="splide__track">
+                  <ul class="splide__list">
+                    <li class="splide__slide link" style="color: white">
+                      ABOUT US
+                    </li>
+                    <li style="color: white" class="splide__slide link">
+                      PRODUCTS
+                    </li>
+                    <li style="color: white" class="splide__slide link">
+                      SUSTAINABILITY
+                    </li>
+                    <li style="color: white" class="splide__slide link">
+                      CONTACT
+                    </li>
+                    <li style="color: white" class="splide__slide link">
+                      BRAND
+                    </li>
+                    <li style="color: white" class="splide__slide link">
+                      SHOP
+                    </li>
+                    <li style="color: white" class="splide__slide link">
+                      NEWS
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
-            <div class="HeroHeading">
-                <h1>Driving Performance</h1>
-            </div>
-            <canvas></canvas>
+          </div>
         </div>
-        <!-- -------------Hero Section-------------- -->
 
-        <!-- ----------------Page 1 - Video Section------------- -->
-
-        <div class="videoSection">
-            <div class="videoOverlayText">
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed <span style="color: #CD9C49;">diam nonummy nibh</span> euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad </p>
-            </div>
-            <div class="videoOverlay"></div>
-            <video src="./images/DesktopVideoMatrax1.mp4"  muted class="videoElem"></video>
+        <div class="imgBackgroundHero">
+          <img src="./images/Background 1.jpg" alt="" />
         </div>
+        <div class="HeroHeading">
+          <h1>Driving Performance</h1>
+        </div>
+        <canvas></canvas>
+      </div>
+      <!-- -------------Hero Section-------------- -->
 
-        <!-- ----------------Page 1 - Video Section------------- -->
+      <!-- ----------------Page 1 - Video Section------------- -->
 
-        <!-- -------------Horizontal Scroll------------ -->
+      <div class="videoSection">
+        <div class="videoOverlayText">
+          <p>
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+            <span style="color: #cd9c49">diam nonummy nibh</span> euismod
+            tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi
+            enim ad
+          </p>
+        </div>
+        <div class="videoOverlay"></div>
+        <video
+          src="./images/DesktopVideoMatrax1.mp4"
+          muted
+          class="videoElem"
+        ></video>
+      </div>
 
-        <section id="horizontal">
-            <h2>PRECISION CRAFTED<br>
-                FOR PERFORMANCE ROADS</h2>
-            <div class="horizontal__content">
-                <div class="horizontal__item up">
-                    <div class="tyre_img_hor"><img src="./images/1.png" alt=""></div>
-                    <div class="content_hor">
-                        <div class="left_content_hor">ultra high performance</div>
-                        <div class="right_content_hor">urcola+</div>
-                    </div>
-                    <div class="on_hover_tyre_hor">
-                        MORE
-                    </div>
-                </div>
+      <!-- ----------------Page 1 - Video Section------------- -->
 
-                <div class="horizontal__item down">
-                    <div class="tyre_img_hor"><img src="./images/2.png" alt=""></div>
-                    <div class="content_hor">
-                        <div class="left_content_hor">high performance</div>
-                        <div class="right_content_hor">miurra</div>
-                    </div>
-                    <div class="on_hover_tyre_hor">
-                        MORE
-                    </div>
-                </div>
+      <!-- -------------Horizontal Scroll------------ -->
 
-                <div class="horizontal__item up">
-                    <div class="tyre_img_hor"><img src="./images/3.png" alt=""></div>
-                    <div class="content_hor">
-                        <div class="left_content_hor">highway terrain</div>
-                        <div class="right_content_hor">Veragua SV</div>
-                    </div>
-                    <div class="on_hover_tyre_hor">
-                        MORE
-                    </div>
-                </div>
-
-                <div class="horizontal__item up_up">
-                    <div class="tyre_img_hor"><img src="./images/4.png" alt=""></div>
-                    <div class="content_hor">
-                        <div class="left_content_hor">LIGHT TRUCK</div>
-                        <div class="right_content_hor">Colmenar</div>
-                    </div>
-                    <div class="on_hover_tyre_hor">
-                        MORE
-                    </div>
-                </div>
-
-                <div class="horizontal__item up">
-                    <div class="tyre_img_hor"><img src="./images/5.png" alt=""></div>
-                    <div class="content_hor">
-                        <div class="left_content_hor">4 X 4</div>
-                        <div class="right_content_hor">Veragua M/T</div>
-                    </div>
-                    <div class="on_hover_tyre_hor">
-                        MORE
-                    </div>
-                </div>
-                
+      <section id="horizontal">
+        <h2>
+          PRECISION CRAFTED<br />
+          FOR PERFORMANCE ROADS
+        </h2>
+        <div class="horizontal__content">
+          <div class="horizontal__item up">
+            <div class="tyre_img_hor"><img src="./images/1.png" alt="" /></div>
+            <div class="content_hor">
+              <div class="left_content_hor">ultra high performance</div>
+              <div class="right_content_hor">urcola+</div>
             </div>
-    </section>
+            <div class="on_hover_tyre_hor">MORE</div>
+          </div>
 
-            <!-- -------------Horizontal Scroll------------ -->
+          <div class="horizontal__item down">
+            <div class="tyre_img_hor"><img src="./images/2.png" alt="" /></div>
+            <div class="content_hor">
+              <div class="left_content_hor">high performance</div>
+              <div class="right_content_hor">miurra</div>
+            </div>
+            <div class="on_hover_tyre_hor">MORE</div>
+          </div>
 
+          <div class="horizontal__item up">
+            <div class="tyre_img_hor"><img src="./images/3.png" alt="" /></div>
+            <div class="content_hor">
+              <div class="left_content_hor">highway terrain</div>
+              <div class="right_content_hor">Veragua SV</div>
+            </div>
+            <div class="on_hover_tyre_hor">MORE</div>
+          </div>
 
-        <div class="newpage"></div>
-        <div class="newpage1"></div>
-        <div class="newpage"></div>
-        <div class="newpage1"></div>
-        <div class="newpage"></div>
-        <div class="newpage1"></div>
-        <div class="newpage1"></div>
-        <div class="newpage1"></div>
+          <div class="horizontal__item up_up">
+            <div class="tyre_img_hor"><img src="./images/4.png" alt="" /></div>
+            <div class="content_hor">
+              <div class="left_content_hor">LIGHT TRUCK</div>
+              <div class="right_content_hor">Colmenar</div>
+            </div>
+            <div class="on_hover_tyre_hor">MORE</div>
+          </div>
 
+          <div class="horizontal__item up">
+            <div class="tyre_img_hor"><img src="./images/5.png" alt="" /></div>
+            <div class="content_hor">
+              <div class="left_content_hor">4 X 4</div>
+              <div class="right_content_hor">Veragua M/T</div>
+            </div>
+            <div class="on_hover_tyre_hor">MORE</div>
+          </div>
+        </div>
+      </section>
 
+      <!-- -------------Horizontal Scroll------------ -->
 
-
-
-
-
-        
-
+      <div class="newpage"></div>
+      <div class="newpage1"></div>
+      <div class="newpage"></div>
+      <div class="newpage1"></div>
+      <div class="newpage"></div>
+      <div class="newpage1"></div>
+      <div class="newpage1"></div>
+      <div class="newpage1"></div>
     </div>
 
-<script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"
-    integrity="sha512-cOH8ndwGgPo+K7pTvMrqYbmI8u8k6Sho3js0gOqVWTmQMlLIi6TbqGWRTpf1ga8ci9H3iPsvDLr4X7xwhC/+DQ=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"
-    integrity="sha512-AMl4wfwAmDM1lsQvVBBRHYENn1FR8cfOTpt8QVbb/P55mYOdahHD4LmHM1W55pNe3j/3od8ELzPf/8eNkkjISQ=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="script.js"></script>
-</body>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"
+      integrity="sha512-cOH8ndwGgPo+K7pTvMrqYbmI8u8k6Sho3js0gOqVWTmQMlLIi6TbqGWRTpf1ga8ci9H3iPsvDLr4X7xwhC/+DQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"
+      integrity="sha512-AMl4wfwAmDM1lsQvVBBRHYENn1FR8cfOTpt8QVbb/P55mYOdahHD4LmHM1W55pNe3j/3od8ELzPf/8eNkkjISQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
+    />
+    <script src="script.js"></script>
+  </body>
 </html>
